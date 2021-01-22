@@ -1,10 +1,9 @@
-.main-frame > div:nth-child(odd){
-    background: #cfd68f
-}
+
 
 
 .main-frame{
-    background: #dddddd;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     display: grid;
     grid-template-columns: 10% 50% 40%;
 }
@@ -12,6 +11,8 @@
 .random{
     padding-inline-start: 30px;
     padding-top: 15px;
+    
+    border: solid rgb(230, 109, 109) 5px;
     border-radius: 10px;
 }
 
@@ -19,10 +20,12 @@
     margin: 0px;
     padding-bottom: 20px;
     border-radius: 10px;
+    border: solid rgb(212, 81, 195) 5px;
 }
 
 .results{
     border-radius: 10px;
+    border: solid rgb(230, 109, 109) 5px;
 }
 
 #grid{
