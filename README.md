@@ -1,2 +1,0 @@
-# puzzle_game
-puzzle
