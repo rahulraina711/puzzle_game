@@ -11,9 +11,19 @@
 .random{
     padding-inline-start: 30px;
     padding-top: 15px;
-    
+    justify-content: center;
+    align-items: center;
+
     border: solid rgb(230, 109, 109) 5px;
     border-radius: 10px;
+}
+button
+{
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: ;
 }
 
 .game{
@@ -134,11 +144,15 @@
     text-align: center;
     padding-top: 5px;
     color: rgb(157, 20, 220);
-    background-color: rgb(47, 255, 151);
+
     box-shadow: 0px 0px 10px grey;
     font-size: 25px;
     font-family:sans-serif;
     text-shadow: 0px 0px 10px indianred;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(6.0px);
+    -webkit-backdrop-filter:blur(6.0 px);
 }
 
 .leader-boards-true{
@@ -150,12 +164,15 @@
     text-align: center;
     padding-top: 5px;
     color: rgb(221, 208, 31);
-    background-color: rgb(255, 89, 47);
     box-shadow: 0px 0px 10px grey;
     font-size: 25px;
     font-family:sans-serif;
     text-shadow: 0px 0px 10px indianred;
     cursor: url('images/happy.png'), auto;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(6.0px);
+    -webkit-backdrop-filter:blur(6.0 px);
 }
 
 .leader-boards-content{
@@ -167,14 +184,16 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: crimson;
-    background-color: rgb(252, 188, 159);
-    box-shadow: 0px 0px 10px grey;
     font-size: 25px;
     font-family:sans-serif;
     text-shadow: 0px 0px 10px indianred;
     cursor: url('images/meh.png'), auto;
     justify-content: center;
     align-items: center;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(6.0px);
+    -webkit-backdrop-filter:blur(6.0 px);
 }
 #player-name{
     width: 600px;
