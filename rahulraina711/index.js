@@ -20,14 +20,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
     var champ = "none";
     var timeList = [];
     var playerList = [];
-    for (var j = 0; j < localStorage.length; j++){
+    for (var j = 0; j < localStorage.length; j++) {
         timeList.push(localStorage.getItem(localStorage.key(j)));
         //console.log(localStorage.getItem(localStorage.key(j)));
 
         playerList.push(localStorage.key(j));
         //console.log(localStorage.key(j));
     }
-    var champ_value = ""+Math.min(...timeList);
+    var champ_value = "" + Math.min(...timeList);
 
     //console.log(champ_value, typeof(champ_value));
     //console.log(timeList.indexOf(champ_value));
@@ -38,41 +38,82 @@ window.addEventListener("DOMContentLoaded", (event) => {
     champ = localStorage.key(key_ls);
     console.log(champ);
 
-    document.getElementById('curr_champ').innerText = "Champion : "+champ;
+    document.getElementById('curr_champ').innerText = "Champion : " + champ;
 
-    
 
-    
-    
+
+
+
 })
 
 function easyWin() {
-    document.getElementById('p11').textContent = 11;
-    document.getElementById('p11').style.background = 'url(images/11.jpg)';
+    if (window.innerWidth > 530) {
+        document.getElementById('p11').textContent = 11;
+        document.getElementById('p11').style.background = 'url(images/11.jpg)';
+        document.getElementById('p11').style.backgroundSize = '100px';
 
-    document.getElementById('p12').textContent = 12;
-    document.getElementById('p12').style.background = 'url(images/12.jpg)';
+        document.getElementById('p12').textContent = 12;
+        document.getElementById('p12').style.background = 'url(images/12.jpg)';
 
-    document.getElementById('p13').textContent = 13;
-    document.getElementById('p13').style.background = 'url(images/13.jpg)';
+        document.getElementById('p13').textContent = 13;
+        document.getElementById('p13').style.background = 'url(images/13.jpg)';
 
-    document.getElementById('p21').textContent = 21;
-    document.getElementById('p21').style.background = 'url(images/21.jpg)';
+        document.getElementById('p21').textContent = 21;
+        document.getElementById('p21').style.background = 'url(images/21.jpg)';
 
-    document.getElementById('p22').textContent = 22;
-    document.getElementById('p22').style.background = 'url(images/22.jpg)';
+        document.getElementById('p22').textContent = 22;
+        document.getElementById('p22').style.background = 'url(images/22.jpg)';
 
-    document.getElementById('p23').textContent = 23;
-    document.getElementById('p23').style.background = 'url(images/23.jpg)';
+        document.getElementById('p23').textContent = 23;
+        document.getElementById('p23').style.background = 'url(images/23.jpg)';
 
-    document.getElementById('p31').textContent = 31;
-    document.getElementById('p31').style.background = 'url(images/31.jpg)';
+        document.getElementById('p31').textContent = 31;
+        document.getElementById('p31').style.background = 'url(images/31.jpg)';
 
-    document.getElementById('p32').textContent = 32;
-    document.getElementById('p32').style.background = 'url(images/32.jpg)';
+        document.getElementById('p32').textContent = 32;
+        document.getElementById('p32').style.background = 'url(images/32.jpg)';
 
-    document.getElementById('p33').textContent = 33;
-    document.getElementById('p33').style.background = 'url(images/33.jpg)';
+        document.getElementById('p33').textContent = 33;
+        document.getElementById('p33').style.background = 'url(images/33.jpg)';
+    }
+    else{
+        document.getElementById('p11').textContent = 11;
+        document.getElementById('p11').style.background = 'url(images/11.jpg)';
+        document.getElementById('p11').style.backgroundSize = '100px';
+
+        document.getElementById('p12').textContent = 12;
+        document.getElementById('p12').style.background = 'url(images/12.jpg)';
+        document.getElementById('p12').style.backgroundSize = '100px';
+
+        document.getElementById('p13').textContent = 13;
+        document.getElementById('p13').style.background = 'url(images/13.jpg)';
+        document.getElementById('p13').style.backgroundSize = '100px';
+
+        document.getElementById('p21').textContent = 21;
+        document.getElementById('p21').style.background = 'url(images/21.jpg)';
+        document.getElementById('p21').style.backgroundSize = '100px';
+
+        document.getElementById('p22').textContent = 22;
+        document.getElementById('p22').style.background = 'url(images/22.jpg)';
+        document.getElementById('p22').style.backgroundSize = '100px';
+
+        document.getElementById('p23').textContent = 23;
+        document.getElementById('p23').style.background = 'url(images/23.jpg)';
+        document.getElementById('p23').style.backgroundSize = '100px';
+
+        document.getElementById('p31').textContent = 31;
+        document.getElementById('p31').style.background = 'url(images/31.jpg)';
+        document.getElementById('p31').style.backgroundSize = '100px';
+
+        document.getElementById('p32').textContent = 32;
+        document.getElementById('p32').style.background = 'url(images/32.jpg)';
+        document.getElementById('p32').style.backgroundSize = '100px';
+
+        document.getElementById('p33').textContent = 33;
+        document.getElementById('p33').style.background = 'url(images/33.jpg)';
+        document.getElementById('p33').style.backgroundSize = '100px';
+    }
+
 }
 
 function startGame() {
@@ -204,7 +245,14 @@ function switching(cell) {
                         document.getElementById('p31').style.visibility = 'hidden';
                         document.getElementById('p32').style.visibility = 'hidden';
                         document.getElementById('p33').style.visibility = 'hidden';
-                        document.getElementById('grid').style.background = 'url( images/win.gif )';
+                        
+                        if(window.innerWidth > 530){
+                            document.getElementById('grid').style.background = 'url( images/win.gif )';
+                        }
+                        else{
+                            document.getElementById('grid').style.background = 'url( images/win.gif )';
+                            document.getElementById('grid').style.backgroundSize = '300px';
+                        }
                     }, 600);
                     document.getElementById('player-name').style.visibility = 'visible';
 
