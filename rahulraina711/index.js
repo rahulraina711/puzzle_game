@@ -135,30 +135,40 @@ function startGame() {
 
     document.getElementById('p11').textContent = tab_position[0];
     document.getElementById('p11').style.background = 'url(images/' + tab_position[0] + '.jpg)';
+    document.getElementById('p11').style.backgroundSize = 'cover';
 
     document.getElementById('p12').textContent = tab_position[1];
     document.getElementById('p12').style.background = 'url(images/' + tab_position[1] + '.jpg)';
+    document.getElementById('p12').style.backgroundSize = 'cover';
+    
 
     document.getElementById('p13').textContent = tab_position[2];
     document.getElementById('p13').style.background = 'url(images/' + tab_position[2] + '.jpg)';
+    document.getElementById('p13').style.backgroundSize = 'cover';
 
     document.getElementById('p21').textContent = tab_position[3];
     document.getElementById('p21').style.background = 'url(images/' + tab_position[3] + '.jpg)';
+    document.getElementById('p21').style.backgroundSize = 'cover';
 
     document.getElementById('p22').textContent = tab_position[4];
     document.getElementById('p22').style.background = 'url(images/' + tab_position[4] + '.jpg)';
+    document.getElementById('p22').style.backgroundSize = 'cover';
 
     document.getElementById('p23').textContent = tab_position[5];
     document.getElementById('p23').style.background = 'url(images/' + tab_position[5] + '.jpg)';
+    document.getElementById('p23').style.backgroundSize = 'cover';
 
     document.getElementById('p31').textContent = tab_position[6];
     document.getElementById('p31').style.background = 'url(images/' + tab_position[6] + '.jpg)';
+    document.getElementById('p31').style.backgroundSize = 'cover';
 
     document.getElementById('p32').textContent = tab_position[7];
     document.getElementById('p32').style.background = 'url(images/' + tab_position[7] + '.jpg)';
+    document.getElementById('p32').style.backgroundSize = 'cover';
 
     document.getElementById('p33').textContent = tab_position[8];
     document.getElementById('p33').style.background = 'url(images/' + tab_position[8] + '.jpg)';
+    document.getElementById('p33').style.backgroundSize = 'cover';
 
     num_mvs = 0;
     document.getElementById('moves').textContent = "Moves: 0";
@@ -218,6 +228,9 @@ function switching(cell) {
 
                     document.getElementById('p12').style.background = 'url( images/' + document.getElementById('p12').textContent + '.jpg)';
                     document.getElementById('p11').style.background = 'url( images/' + document.getElementById('p11').textContent + '.jpg)';
+                    
+                    document.getElementById('p11').style.backgroundSize = 'cover';
+                    document.getElementById('p12').style.backgroundSize = 'cover';
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
 
@@ -229,6 +242,10 @@ function switching(cell) {
 
                     document.getElementById('p21').style.background = 'url( images/' + document.getElementById('p21').textContent + '.jpg)';
                     document.getElementById('p11').style.background = 'url( images/' + document.getElementById('p11').textContent + '.jpg)';
+                    
+                    document.getElementById('p21').style.backgroundSize = 'cover';
+                    document.getElementById('p11').style.backgroundSize = 'cover';
+
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
 
@@ -251,7 +268,7 @@ function switching(cell) {
                         }
                         else{
                             document.getElementById('grid').style.background = 'url( images/win.gif )';
-                            document.getElementById('grid').style.backgroundSize = '300px';
+                            document.getElementById('grid').style.backgroundSize = 'cover';
                         }
                     }, 600);
                     document.getElementById('player-name').style.visibility = 'visible';
@@ -268,6 +285,10 @@ function switching(cell) {
 
                     document.getElementById('p11').style.background = 'url( images/' + document.getElementById('p11').textContent + '.jpg)';
                     document.getElementById('p12').style.background = 'url( images/' + document.getElementById('p12').textContent + '.jpg)';
+                    
+                    document.getElementById('p11').style.backgroundSize = 'cover';
+                    document.getElementById('p12').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -278,6 +299,10 @@ function switching(cell) {
 
                     document.getElementById('p22').style.background = 'url( images/' + document.getElementById('p22').textContent + '.jpg)';
                     document.getElementById('p12').style.background = 'url( images/' + document.getElementById('p12').textContent + '.jpg)';
+                    
+                    document.getElementById('p22').style.backgroundSize = 'cover';
+                    document.getElementById('p12').style.backgroundSize = 'cover';
+
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -288,6 +313,10 @@ function switching(cell) {
 
                     document.getElementById('p13').style.background = 'url( images/' + document.getElementById('p13').textContent + '.jpg)';
                     document.getElementById('p12').style.background = 'url( images/' + document.getElementById('p12').textContent + '.jpg)';
+                    
+                    document.getElementById('p13').style.backgroundSize = 'cover';
+                    document.getElementById('p12').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -302,6 +331,10 @@ function switching(cell) {
 
                     document.getElementById('p12').style.background = 'url( images/' + document.getElementById('p12').textContent + '.jpg)';
                     document.getElementById('p13').style.background = 'url( images/' + document.getElementById('p13').textContent + '.jpg)';
+                    
+                    document.getElementById('p13').style.backgroundSize = 'cover';
+                    document.getElementById('p12').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -312,6 +345,10 @@ function switching(cell) {
 
                     document.getElementById('p23').style.background = 'url( images/' + document.getElementById('p23').textContent + '.jpg)';
                     document.getElementById('p13').style.background = 'url( images/' + document.getElementById('p13').textContent + '.jpg)';
+                    
+                    document.getElementById('p23').style.backgroundSize = 'cover';
+                    document.getElementById('p13').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -326,6 +363,10 @@ function switching(cell) {
 
                     document.getElementById('p11').style.background = 'url( images/' + document.getElementById('p11').textContent + '.jpg)';
                     document.getElementById('p21').style.background = 'url( images/' + document.getElementById('p21').textContent + '.jpg)';
+                    
+                    document.getElementById('p11').style.backgroundSize = 'cover';
+                    document.getElementById('p21').style.backgroundSize = 'cover';
+
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -336,6 +377,10 @@ function switching(cell) {
 
                     document.getElementById('p22').style.background = 'url( images/' + document.getElementById('p22').textContent + '.jpg)';
                     document.getElementById('p21').style.background = 'url( images/' + document.getElementById('p21').textContent + '.jpg)';
+                    
+                    document.getElementById('p22').style.backgroundSize = 'cover';
+                    document.getElementById('p21').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -346,6 +391,10 @@ function switching(cell) {
 
                     document.getElementById('p31').style.background = 'url( images/' + document.getElementById('p31').textContent + '.jpg)';
                     document.getElementById('p21').style.background = 'url( images/' + document.getElementById('p21').textContent + '.jpg)';
+                    
+                    document.getElementById('p31').style.backgroundSize = 'cover';
+                    document.getElementById('p21').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -361,6 +410,10 @@ function switching(cell) {
 
                     document.getElementById('p12').style.background = 'url( images/' + document.getElementById('p12').textContent + '.jpg)';
                     document.getElementById('p22').style.background = 'url( images/' + document.getElementById('p22').textContent + '.jpg)';
+                    
+                    document.getElementById('p12').style.backgroundSize = 'cover';
+                    document.getElementById('p22').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -371,6 +424,10 @@ function switching(cell) {
 
                     document.getElementById('p21').style.background = 'url( images/' + document.getElementById('p21').textContent + '.jpg)';
                     document.getElementById('p22').style.background = 'url( images/' + document.getElementById('p22').textContent + '.jpg)';
+                    
+                    document.getElementById('p21').style.backgroundSize = 'cover';
+                    document.getElementById('p22').style.backgroundSize = 'cover';
+
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -381,6 +438,10 @@ function switching(cell) {
 
                     document.getElementById('p32').style.background = 'url( images/' + document.getElementById('p32').textContent + '.jpg)';
                     document.getElementById('p22').style.background = 'url( images/' + document.getElementById('p22').textContent + '.jpg)';
+                    
+                    document.getElementById('p32').style.backgroundSize = 'cover';
+                    document.getElementById('p22').style.backgroundSize = 'cover';
+
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -391,6 +452,10 @@ function switching(cell) {
 
                     document.getElementById('p23').style.background = 'url( images/' + document.getElementById('p23').textContent + '.jpg)';
                     document.getElementById('p22').style.background = 'url( images/' + document.getElementById('p22').textContent + '.jpg)';
+                    
+                    document.getElementById('p23').style.backgroundSize = 'cover';
+                    document.getElementById('p22').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -405,6 +470,10 @@ function switching(cell) {
 
                     document.getElementById('p13').style.background = 'url( images/' + document.getElementById('p13').textContent + '.jpg)';
                     document.getElementById('p23').style.background = 'url( images/' + document.getElementById('p23').textContent + '.jpg)';
+                    
+                    document.getElementById('p23').style.backgroundSize = 'cover';
+                    document.getElementById('p13').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -415,6 +484,10 @@ function switching(cell) {
 
                     document.getElementById('p22').style.background = 'url( images/' + document.getElementById('p22').textContent + '.jpg)';
                     document.getElementById('p23').style.background = 'url( images/' + document.getElementById('p23').textContent + '.jpg)';
+                    
+                    document.getElementById('p23').style.backgroundSize = 'cover';
+                    document.getElementById('p22').style.backgroundSize = 'cover';
+
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -425,6 +498,10 @@ function switching(cell) {
 
                     document.getElementById('p33').style.background = 'url( images/' + document.getElementById('p33').textContent + '.jpg)';
                     document.getElementById('p23').style.background = 'url( images/' + document.getElementById('p23').textContent + '.jpg)';
+                    
+                    document.getElementById('p23').style.backgroundSize = 'cover';
+                    document.getElementById('p33').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -440,6 +517,10 @@ function switching(cell) {
 
                     document.getElementById('p21').style.background = 'url( images/' + document.getElementById('p21').textContent + '.jpg)';
                     document.getElementById('p31').style.background = 'url( images/' + document.getElementById('p31').textContent + '.jpg)';
+                    
+                    document.getElementById('p21').style.backgroundSize = 'cover';
+                    document.getElementById('p31').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -450,6 +531,10 @@ function switching(cell) {
 
                     document.getElementById('p32').style.background = 'url( images/' + document.getElementById('p32').textContent + '.jpg)';
                     document.getElementById('p31').style.background = 'url( images/' + document.getElementById('p31').textContent + '.jpg)';
+                    
+                    document.getElementById('p32').style.backgroundSize = 'cover';
+                    document.getElementById('p31').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -465,6 +550,10 @@ function switching(cell) {
 
                     document.getElementById('p31').style.background = 'url( images/' + document.getElementById('p31').textContent + '.jpg)';
                     document.getElementById('p32').style.background = 'url( images/' + document.getElementById('p32').textContent + '.jpg)';
+                    
+                    document.getElementById('p32').style.backgroundSize = 'cover';
+                    document.getElementById('p31').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -475,6 +564,10 @@ function switching(cell) {
 
                     document.getElementById('p22').style.background = 'url( images/' + document.getElementById('p22').textContent + '.jpg)';
                     document.getElementById('p32').style.background = 'url( images/' + document.getElementById('p32').textContent + '.jpg)';
+                    
+                    document.getElementById('p22').style.backgroundSize = 'cover';
+                    document.getElementById('p32').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -485,6 +578,10 @@ function switching(cell) {
 
                     document.getElementById('p33').style.background = 'url( images/' + document.getElementById('p33').textContent + '.jpg)';
                     document.getElementById('p32').style.background = 'url( images/' + document.getElementById('p32').textContent + '.jpg)';
+                    
+                    document.getElementById('p33').style.backgroundSize = 'cover';
+                    document.getElementById('p32').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -499,6 +596,10 @@ function switching(cell) {
 
                     document.getElementById('p23').style.background = 'url( images/' + document.getElementById('p23').textContent + '.jpg)';
                     document.getElementById('p33').style.background = 'url( images/' + document.getElementById('p33').textContent + '.jpg)';
+                    
+                    document.getElementById('p23').style.backgroundSize = 'cover';
+                    document.getElementById('p33').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }
@@ -509,6 +610,10 @@ function switching(cell) {
 
                     document.getElementById('p32').style.background = 'url( images/' + document.getElementById('p32').textContent + '.jpg)';
                     document.getElementById('p33').style.background = 'url( images/' + document.getElementById('p33').textContent + '.jpg)';
+                    
+                    document.getElementById('p32').style.backgroundSize = 'cover';
+                    document.getElementById('p33').style.backgroundSize = 'cover';
+                    
                     num_mvs++;
                     document.getElementById('moves').textContent = "Moves: " + num_mvs;
                 }

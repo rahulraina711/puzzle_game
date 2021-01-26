@@ -62,39 +62,40 @@ button
 
 #p11{
     background: url('images/11.jpg');
+    background-size: cover;
     
 }
 #p12{
     background: url('images/12.jpg');
-   
+    background-size: cover;
 }
 #p13{
     background: url('images/13.jpg');
-
+    background-size: cover;
 }
 #p21{
     background: url('images/21.jpg');
-
+    background-size: cover;
 }
 #p22{
     background: url('images/22.jpg');
-   
+    background-size: cover;
 }
 #p23{
     background: url('images/23.jpg');
-    
+    background-size: cover;   
 }
 #p31{
     background: url('images/31.jpg');
- 
+    background-size: cover;
 }
 #p32{
     background: url('images/32.jpg');
-
+    background-size: cover;
 }
 #p33{
     background: url('images/33.jpg');
-
+    background-size: cover;
 }
 
 #launch {
@@ -269,40 +270,40 @@ button
     }
     #p11{
         background: url('images/11.jpg');
-        background-size: 100px ;
+        background-size: cover;
         
     }
     #p12{
         background: url('images/12.jpg');
-        background-size: 100px ;
+        background-size: cover;
     }
     #p13{
         background: url('images/13.jpg');
-        background-size: 100px ;
+        background-size: cover;
     }
     #p21{
         background: url('images/21.jpg');
-        background-size: 100px ;
+        background-size: cover;
     }
     #p22{
         background: url('images/22.jpg');
-        background-size: 100px ;
+        background-size: cover;
     }
     #p23{
         background: url('images/23.jpg');
-        background-size: 100px ;
+        background-size: cover;
     }
     #p31{
         background: url('images/31.jpg');
-        background-size: 100px ;
+        background-size: cover;
     }
     #p32{
         background: url('images/32.jpg');
-        background-size: 100px ;
+        background-size: cover;
     }
     #p33{
         background: url('images/33.jpg');
-        background-size: 100px ;
+        background-size: cover;
     }
     #launch {
         margin: auto;
@@ -348,7 +349,7 @@ button
     }
     
     .leader-boards{
-        width: 500px;
+        width: auto;
 
 
         height: 40px;
@@ -368,7 +369,7 @@ button
     }
     
     .leader-boards-true{
-        width: 500px;
+        width: auto;
         
         height: 40px;
         border-radius: 10px;
@@ -387,7 +388,7 @@ button
     }
     
     .leader-boards-content{
-        width: 500px;
+        width: auto;
         border-radius: 10px;
         text-align: center;
         color: crimson;
@@ -401,7 +402,7 @@ button
         -webkit-backdrop-filter:blur(6.0 px);
     }
     #player-name{
-        width: 500px;
+        width: auto;
         border-radius: 5px;
         text-align: center;
         color: crimson;
